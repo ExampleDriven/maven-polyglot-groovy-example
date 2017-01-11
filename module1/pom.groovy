@@ -3,7 +3,7 @@ project {
     modelVersion '4.0.0'
     parent {
         groupId 'org.exampledriven'
-        artifactId 'maven-polyglot-example'
+        artifactId 'maven-polyglot-groovy-example'
         version '1.0-SNAPSHOT'
     }
     artifactId 'module1'
