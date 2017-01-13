@@ -4,4 +4,4 @@ before_install:
  - chmod +x mvnw
  - ./mvnw install -N
 script:
- - mvnw install
+ - ./mvnw install
