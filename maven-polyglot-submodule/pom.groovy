@@ -1,12 +1,12 @@
 project {
 
     modelVersion '4.0.0'
-// Temporarily commented out until this https://github.com/takari/polyglot-maven/issues/37 gets resolved
-//    parent {
-//        groupId 'org.exampledriven'
-//        artifactId 'maven-polyglot-groovy-example-parent'
-//        version '1.0-SNAPSHOT'
-//    }
+
+    parent {
+        groupId 'org.exampledriven'
+        artifactId 'maven-polyglot-groovy-example-parent'
+        version '1.0-SNAPSHOT'
+    }
 
     groupId 'org.exampledriven'
     version '1.0-SNAPSHOT'
@@ -19,9 +19,9 @@ project {
 
     build {
 
-        $execute(id: 'hello', phase: 'compile') {
+        $execute(id: 'generate-file', phase: 'compile') {
 
-            if ("true".equals(System.getProperty("file-test"))) {
+            if ("true".equals(System.getProperty("generate-file"))) {
                 println "File generation is enabled"
 
                 println properties.size()
