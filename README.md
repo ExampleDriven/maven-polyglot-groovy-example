@@ -17,7 +17,7 @@ to run an inlined maven plugin run maven-polyglot-submodule like this
 ## Hacks, workarounds
 
 - Travis is using an older version of maven that does not support polyglot. As a workaround the maven wrapper was used. [Bug #4872](https://github.com/travis-ci/travis-ci/issues/4872)  
-- Parent pom has to be built separately using `mvn install -N` [Bug #37](https://github.com/takari/polyglot-maven/issues/37)
+- Parent pom has to be built separately using `mvn install -N` or relativepath to be added to pom.groovy to workaround [Bug #37](https://github.com/takari/polyglot-maven/issues/37)
 
 
 ## References
