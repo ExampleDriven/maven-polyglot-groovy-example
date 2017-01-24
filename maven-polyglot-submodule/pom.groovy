@@ -6,6 +6,7 @@ project {
         groupId 'org.exampledriven'
         artifactId 'maven-polyglot-groovy-example-parent'
         version '1.0-SNAPSHOT'
+        relativePath '../pom.groovy'
     }
 
     groupId 'org.exampledriven'
