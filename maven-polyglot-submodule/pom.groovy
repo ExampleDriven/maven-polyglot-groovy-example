@@ -22,6 +22,17 @@ project {
 
         $execute(id: 'generate-file', phase: 'compile') {
 
+/*
+      ec ->
+
+      //Available starting polyglot-groovy 0.1.20
+
+      println 'Version : ' + ec.getProject().getModel().getVersion()
+      println 'Group ID : ' + ec.getProject().getModel().getGroupId()
+      println 'Artifact ID : ' + ec.getProject().getModel().getArtifactId()
+      println 'Basedir : ' + ec.basedir()
+*/
+
             if ("true".equals(System.getProperty("generate-file"))) {
                 println "File generation is enabled"
 
